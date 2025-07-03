@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container
+        {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding-top: 50px;
+            flex-wrap: wrap;
+        }
+        .item
+        {
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 40px;
+            background-color: gainsboro;
+        }
+        ul li{
+            list-style: none;
+            margin: 10px 0px;
+            font-size: large;
+            font-weight: bold;
+        }
+        button{
+            font-size: large;
+            cursor: pointer;
+        }
+        h2{
+            font-size: 32px;
+        }
+        h1{
+            font-size: 40px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #first
+        {
+            background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        }
+        #second
+        {
+            background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        }
+        #third
+        {
+            background: linear-gradient(0deg,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="first">
+            <h2>Basic</h2>
+            <h1>$11.99/month</h1>
+            <ul>
+                <li>10GB Storage</li>
+                <li>1 User</li>
+                <li>No Support</li>
+            </ul>
+            <button style="background-color:greenyellow; padding: 5px 0px; padding-left: 10px;padding-right: 10px;border: 0.5px solid black; border-radius: 5px;">Sign Up</button>
+        </div>
+        <div class="item" id="second">
+            <h2>Standard</h2>
+            <h1>$19.99/month</h1>
+            <ul>
+                <li>50GB Storage</li>
+                <li>5 User</li>
+                <li>Phone and Email Support</li>
+            </ul>
+            <button style="background-color:rgb(255, 132, 0);padding: 5px 0px; padding-left: 10px;padding-right: 10px;border: 0.5px solid black; border-radius: 5px;">Sign Up</button>
+        </div>
+        <div class="item" id="third">
+            <h2>Premium</h2>
+            <h1>$12.99/month</h1>
+            <ul>
+                <li>100GB Storage</li>
+                <li>10 User</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button style="background-color:greenyellow;padding: 5px 0px; padding-left: 10px;padding-right: 10px;border: 0.5px solid black; border-radius: 5px;">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
